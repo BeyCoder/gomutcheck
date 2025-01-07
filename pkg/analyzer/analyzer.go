@@ -9,7 +9,7 @@ import (
 	"golang.org/x/tools/go/ast/inspector"
 )
 
-func NewAnalyzer() *analysis.Analyzer {
+func New() *analysis.Analyzer {
 	return &analysis.Analyzer{
 		Name: "gomutcheck",
 		Doc:  "detects mutations of struct fields in value receiver methods",
